@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/undraw_Location_search_re_ttoj.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>OurBank.uz - Kredit kalkulator!</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="calc">
+                <div class="cash">
+                    <label for="qarz">Kredit miqdorini kiriting:</label>
+                    <input type="number" id="qarz" placeholder="Miqdorni so'mda kiriting!"/>
+                </div>
+                <div class="time">
+                    <label for="muddat">Muddatni tanlang:</label>
+                    <select id="muddat" name="muddat">
+                      <option value="3">3 oy</option>
+                      <option value="6">6 oy</option>
+                      <option value="9">9 oy</option>
+                      <option value="12">12 oy</option>
+                      <option value="15">15 oy</option>
+                      <option value="18">18 oy</option>
+                      <option value="24">24 oy</option>
+                    </select>
+                </div>
+                <div class="foiz">
+                    <label for="foiz">Kredit foizi: </label>
+                    <input type="number" id="foiz" readonly placeholder="Tanlangandan so'ng ask etadi!">
+                </div>
+                <div class="btn">
+                    <button id="hissobla">Hisoblash</button>
+                </div>
+            </div>
+            <div class="hisobot">
+                <table class="table table-hover" id="malumot">
+                    <tr scope="col">
+                        <td>Oy</td>
+                        <td>Umumiy miqdor</td>
+                        <td>To'lanadigan summa</td>
+                        <td>Qolgan summa</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
